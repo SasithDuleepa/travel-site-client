@@ -1,0 +1,238 @@
+/* .About{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+} */
+.wrapper{
+    width: 100%;
+    height: 528px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.About-main-title{
+    font-size: 60px;
+    font-weight: 600;
+    font-family: Playfair Display;
+    color: white;
+    margin-top: 150px;
+}
+.About-main-route{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: -32px;
+}
+.About-main-route-link{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Poppins;
+    color: white;
+    text-decoration: none;
+}
+.About-main-route_link{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Poppins;
+    color: orange;
+    text-decoration: none;
+}
+.About-main-media{
+    display: flex;
+    gap: 20px;
+    margin-top: 58px;
+}
+
+
+
+
+.About-header-text{
+    background-image: url(../../../assets/Background-Pattern.png);
+    background-size: conver;
+    background-repeat: no-repeat;
+    height: 560px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    font-family: Poppins;
+}
+.About-header-text-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 1220px;
+}
+.About-header-text-row-content{
+    display: flex;
+    flex-direction: column;
+    width: 698px;
+}
+.About-header-text-row-content-travelWith{
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(104, 104, 105);
+    margin-bottom: 0;
+}
+.About-header-text-row-content-title{
+    font-size: 50px;
+    font-weight: 800;
+    font-style: italic;
+    font-family: Playfair Display;
+    margin-top: -5px;
+    margin-bottom: 0;
+}
+.About-header-text-row-content-description{
+    font-size: 16px;
+    font-weight: 100;
+}
+.About-header-text-row-img{
+    width: 489px;
+    height: 489px;
+}
+
+
+
+.About-vm-main{
+    background-color: rgb(8, 28, 85);
+    width: 100%;
+    height: 624px;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+.About-vm-main-vm{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1200px;
+}
+.About-vm-main-vm_vm{
+    color: white;
+    width: 505px;
+}
+.About-vm-main-vm_vm-title{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 0;
+    font-family: Poppins;
+}
+.About-vm-main-vm_vm-description{
+    font-size: 16px;
+    font-weight: 100;
+    font-family: Poppins;
+}
+.About-vm-main-keyTags{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 100px;
+    width: 1200px;
+}
+.About-vm-main-keyTags-key{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.About-vm-main-keyTags-key-image{
+
+    &&:hover{
+        animation: gelatine 0.5s infinite;
+    }
+}
+@keyframes gelatine {
+    from, to { transform: scale(1, 1); }
+    25% { transform: scale(0.9, 1.1); }
+    50% { transform: scale(1.1, 0.9); }
+    75% { transform: scale(0.95, 1.05); }
+  }
+
+.About-vm-main-keyTags-key-description{
+    color: white;
+    width: 319px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 100;
+    font-family: Poppins;
+}
+
+
+
+.About-VoC-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 510px;
+    font-family: Poppins;
+}
+.About-VoC-main-section{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.About-VoC-main-section-title{
+    font-size: 32px;
+    font-weight: 500;
+    font-family: Poppins;
+}
+.About-VoC-main-section-row{
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+.About-VoC-main-section-row-image{
+    height: 324px;
+}
+.About-VoC-main-section-row-description{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 324px;
+}
+.About-VoC-main-section-row-description-msg{
+    width: 804px;
+    font-size: 16px;
+    margin-top: -5px;
+}
+.About-VoC-main-section-row-description-company{
+    display: flex;
+    flex-direction: column;
+    margin-top: -8px;
+}
+.About-VoC-main-section-row-description-company-ceo{
+    font-size: 20px;
+    margin-bottom: 0;
+}
+.About-VoC-main-section-row-description-company-nc{
+    font-size: 20px;
+    margin-top: 0;
+}
+
+
+
+
+
+.About-carousel{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+
+}
+.About-carousel-title{
+    font-size: 32px;
+    font-weight: 400;
+    font-weight: poppins;
+}
+
+
+

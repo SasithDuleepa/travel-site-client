@@ -1,0 +1,236 @@
+.placeReview__container-main{
+    /* background-color: yellowgreen; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    
+}
+.placeReview{
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 105px;
+
+}
+.plecereview-img-div{
+    /* background-color: black; */
+    width: 100%;
+
+
+}
+.placeReview__img{
+    width: 1200px;
+    height: 353px;
+}
+.placeReview__title-div{
+    margin-top: -200px;
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+.placeReview__title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   position: relative;
+    inset: auto auto  30px auto;
+    color: aliceblue;
+    font-size: 54px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.496);
+    width: 100%;
+    height: 60px;
+    font-family: Playfair Display;
+
+}
+.placeReview__routes-div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    inset: -100px auto  90px auto;
+}
+.placeReview__routes{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: poppins;
+    text-decoration: none;
+}
+.placeReview__routes-active{
+    color: orange;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: poppins;
+}
+.placeReview__socialmedia{
+    position: relative;
+    inset: -90px auto  auto auto;
+    /* background-color: aqua; */
+
+
+}
+
+
+
+
+
+.placeReview-text-3{
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 10px;
+    font-family: Poppins;
+}
+
+
+
+.placceReview-sub-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: 80px;
+    margin-top: -30px;
+    /* background-color: aqua; */
+}
+.placceReview-sub-div-1{
+
+}
+.placeReview-title-2{
+    
+    font-size: 45px;
+    font-weight: 500;
+    font-family: Poppins;
+    
+}
+.placceReview-sub-div-2{
+
+}
+.placceReview-sub-div-2-more{
+    background-color: orange;
+    border: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 205px;
+    height: 50px;
+    font-family: poppins;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.placeReview-text-2{
+    width: 1200px;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: Poppins;
+    text-align: justify;
+    margin-top: 0px;
+}
+
+.placeReview-title-4{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+    font-family: poppins;
+    margin-top: 13px;
+    height: 80px;
+    /* background-color: aqua; */
+    
+}
+
+
+
+.placeReview-map-div{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: -50px;
+    /* background-color: blue; */
+}
+.map-container{
+    width: 1196px;
+    height: 717px;
+}
+
+.placeReview-title-5{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+    font-family: poppins;
+    /* background-color: aqua; */
+
+    height: 80px;
+}
+
+
+
+
+
+
+
+
+.placeReview-crousel-div{
+    margin: -40px auto 50px auto ;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.place-review-carousel-img-up{
+    width: 388px;
+    height: 350px;
+    padding-bottom: 50px;
+    /* background-color: aquamarine; */
+}
+.place-review-carousel-img-down{
+    width: 388px;
+    height: 350px;
+    padding-top: 50px;
+}
+
+
+
+.place-reviewg-carousel-forward-img{
+    width: 48px;
+
+}
+.place-review-carousel-forward-btn{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+ 
+
+    margin-left: 1140px;
+    margin-top: 130px;
+
+}
+.place-review-carousel-backward-img{
+    width: 48px;
+
+}
+.place-review-carousel-backward-btn{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    margin-top: 130px;
+    margin-left: -35px;
+    z-index: 1;
+}
+

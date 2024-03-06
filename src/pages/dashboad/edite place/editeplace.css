@@ -1,0 +1,168 @@
+
+
+.editeplace{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    margin-left: 150px;
+ 
+}
+.editeplace-line{
+    border-bottom: 2px solid black;
+    width: 90%;
+}
+
+
+
+.editeplace-div1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    margin: 5px;
+}
+.editeplace-search-div{
+    /* background-color: aqua; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}
+.editeplace-search-input{
+    text-align: center;
+    height: 30px;
+    border-radius: 10px;
+}
+
+
+
+.editeplace-search-result-div{
+    background-color: rgb(179, 179, 179);
+    max-height: 200px;
+    width: 400px;
+    overflow-y:scroll;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.editeplace-search-result{
+    background-color: rgba(240, 248, 255, 0.326);
+    margin: 1px 2px;
+    padding: 3px 0px;
+
+}
+
+.editeplace-form-div{
+    /* background-color: violet; */
+    border: 1px solid black;
+    width: 500px;
+    margin-top: 20px;
+    padding: 10px 15px;
+    
+}
+
+.editeplace-form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 5px;
+}
+.editeplace-form-location{
+    display: flex;
+    justify-content: space-between;
+}
+.editeplace-form-label{
+    font-size: 24px;
+}
+.editeplace-form-input{
+    height: 32px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.editeplace-form-img-card{
+    width: 280px;
+    height: 360px;
+}
+.editeplace-form-img-cover{
+    width: 400px;
+  height: 118px;
+}
+
+.editeplace-form-img{
+    width: 388px;
+  height: 300px;
+}
+
+
+.editeplace-form-ims-input{
+    width: 300px;
+
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.editeplace-form-addedimages{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+}
+
+.editeplace-form-addedimg{
+    width: 388px;
+    height: 300px;
+}
+.editeplace-form-addedimg-delete{
+    background-color: red;
+}
+
+
+
+
+
+.editeplace-form-img-div{
+    width: 900px;
+    /* background-color: aqua; */
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.editeplace-form-img-div-title{
+    font-size: 40px;
+    text-align: center;
+}
+.editeplace-form-placeimg-div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* background-color: antiquewhite; */
+}
+
+.editeplace-form-placeimg-div-sub1{
+    /* background-color: yellowgreen; */
+    margin: 5px;
+}
+.editeplace-form-placeimg-div-sub1-edite{
+    position: relative;
+    background-color: blueviolet
+}
+
+
+.edite-place-update-btn{
+    background-color: blue;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+}
+.edite-place-delete-btn{
+    background-color: rgb(255, 0, 0);
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+}

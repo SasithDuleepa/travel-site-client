@@ -1,0 +1,104 @@
+.daytouredite-main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.daytouredite{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+
+
+.daytouredite-result{
+    background-color: rgb(196, 196, 196);
+    width: 175px;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    overflow-y: scroll;
+}
+.daytouredite-form-div{
+    /* background-color: bisque; */
+    margin: 10px auto;
+}
+.daytouredite-form{
+
+    display: flex;
+    flex-direction: column;
+    margin: 10px 5px;
+    width: 500px;
+}
+.daytouredite-form-label{
+
+}
+.daytouredite-form-input{
+    height: 32px;
+}
+
+
+.daytouredite-places-form-div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.daytouredite-places-form{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+
+}
+.daytouredite-places-form-sub{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.daytouredite-places-form-place{
+    font-size: 24px;
+}
+.daytouredite-places-form-info{
+    width: 300px;
+    height: 100px;
+}
+.daytouredite-places-form-btn{
+    background-color: red;
+    padding: 10px 20px;
+}
+
+
+.daytouredite-places-form-div-search{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.daytouredite-places-form-div-search-results{
+    display: flex;
+    flex-direction: column;
+    max-height: 140px;
+    overflow-y:scroll ;
+}
+
+
+
+.daytouredite-update-btn{
+    background-color: blue;
+    padding: 10px 20px;
+    margin: 10px;
+}
+.daytouredite-delete-btn{
+    background-color: rgb(255, 0, 25);
+    padding: 10px 20px;
+    margin: 10px;
+}

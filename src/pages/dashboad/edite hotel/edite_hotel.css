@@ -1,0 +1,98 @@
+
+.edit-hotel-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.edit-hotel-search-div{
+    /* background-color: aqua; */
+}
+.edit-hotel-search{
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    border: 2px soli rgb(144, 144, 144);
+    border-radius: 10px;
+}
+
+.edit-hotel-main-results-div{
+    background-color: rgb(213, 213, 213);
+    width: 200px;
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+.edit-hotel-main-results{
+    width: 100%;
+}
+
+
+
+
+.edit-hotel-form-div{
+    margin: 10px;
+}
+.edit-hotel-form{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    gap: 5px;
+}
+.edit-hotel-form-label{
+    font-size: 22px;
+}
+.edit-hotel-form-input{
+    width: 500px;
+    height: 30px;
+}
+
+
+.edit-hotel-date-form-div{
+
+}
+.edit-hotel-date-form{
+    padding: 10px;
+    border: 1px solid black;
+    margin: 5px;
+    display: flex;
+    gap: 15px;
+}
+.edit-hotel-date-form-sub{
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-hotel-date-form-new{
+    padding: 10px;
+    border: 1px solid rgb(3, 17, 109);
+    background-color: rgb(177, 177, 225);
+    margin: 5px;
+    display: flex;
+    gap: 15px;
+}
+
+
+
+
+
+.edit-hotel-btn-div{
+    display: flex;
+}
+.edit-hotel-btn-update{
+    background-color: var(--blue);
+    padding: 10px 30px;
+    color: white;
+    border: none;
+    margin: 10px;
+    border-radius: 10px;
+}
+.edit-hotel-btn-delete{
+    background-color: red;
+    padding: 10px 30px;
+    color: white;
+    border: none;
+    margin: 10px;
+    border-radius: 10px;
+}

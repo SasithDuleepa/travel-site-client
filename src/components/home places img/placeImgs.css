@@ -1,0 +1,40 @@
+.place-Imgs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.place-Imgs-title{
+    
+}
+.places-main{
+    width: 1194px;
+    margin: 20px auto;
+
+}
+
+.placeImg-carousel-forward-img{
+    width: 48px;
+    
+
+}
+.placeImg-carousel-forward-btn{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    margin-left: 1180px;
+    margin-top: 200px;
+
+}
+.placeImg-carousel-backward-img{
+    width: 48px;
+
+}
+.placeImg-carousel-backward-btn{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    margin-top: 200px;
+    margin-left: -45px;
+    z-index: 1;
+}

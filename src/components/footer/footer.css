@@ -1,0 +1,135 @@
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background-image: url('./../../assets/footer Image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+
+    width: 100%;
+}
+.footer-main{
+    margin: 0px 50px;
+    /* background-color: yellow; */
+    width: 1200px;
+    padding: 50px 10px;
+}
+.footer-container{
+    /* width: 1400px; */
+    width: 100%;
+   
+   
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.footer-left{
+    /* background-color: yellowgreen; */
+    width: 200px;
+    height: 200px;
+}
+.footer-center{
+    /* background-color: rgb(53, 50, 205); */
+    width: 400px;
+    height: 200px;
+}
+.footer-right{
+    /* background-color: rgb(205, 112, 50); */
+    width: 450px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.footer-help, .footer-contact{
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: poppins;
+}
+.footer-left-links-div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+    color: aliceblue;
+}
+.footer-link{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: poppins;
+}
+
+
+.footer-center-p{
+    color: aliceblue;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: poppins;
+}
+
+
+
+.footer-right-div1{
+    display: flex;
+    align-items: center;
+}
+.right-p-1{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: poppins;
+    color: aliceblue;
+}
+.right-p-2{
+    font-size: 22px;
+    color: aliceblue;
+    font-family: Lato;
+    font-weight: 700;
+    margin-left: 10px;
+    font-style: italic;
+}
+.footer-right-p{
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: poppins;
+}
+.footer-right-subs{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.footer-right-subs-btn{
+    background-color: black;
+    padding: 10px 33px;
+    color: aliceblue;
+    border-radius: 34px;
+    border: none;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: poppins;
+}
+.footer-right-subs-input{
+    width: 249px;
+    height: 36px;
+    border: 2px solid rgb(105, 105, 105);
+    border-radius: 8px;
+    background-color: transparent;
+    padding-left: 10          px;
+}
+
+
+.footer-p{
+    text-align: center;
+    color: aliceblue;
+    position: relative;
+    bottom: -50px;
+    font-size: 11px;
+    font-weight: 300;
+    font-family: poppins;
+}
+
