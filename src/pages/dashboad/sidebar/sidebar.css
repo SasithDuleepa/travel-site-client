@@ -1,51 +1,61 @@
-.sidebar{
-    background-color: rgba(220, 212, 221, 1);
-    width: 17%;
+.sidebar {
+    background-color: rgb(255, 255, 255);
+    width: 16%;
     height: 100vh;
     position: fixed;
     margin-top: -22px;
     overflow-y: scroll;
+    padding: 5px;
 
 }
-.sidebar_logo_container{
+
+.sidebar_logo_container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 5px;
+    margin-bottom: -40px;
+
 }
-.sidebar_logo{
-    width: 150px;
+
+.sidebar_logo {
+    width: 200px;
     height: auto;
 }
 
-.sidebar-links-div{
+.sidebar-links-div {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
 }
 
-.sidebar-links{
+.sidebar-links {
     font-size: 24px;
     font-weight: 400;
-    color: azure;
-    background-color:rgba(126, 148, 195, 1);
+    color: rgb(7, 42, 116);
+    background-color: rgb(255, 255, 255);
     padding: 15px 20px;
     margin: 10px 5px;
     text-align: center;
     transition: .4s;
+    border: 1px solid rgb(7, 42, 116);
+    text-decoration: none;
 }
-.sidebar-links:hover{
 
-    color: azure;
-    background-color:rgb(58, 74, 107);
+.sidebar-links:hover {
+
+    color: rgb(255, 255, 255);
+    background-color: rgb(7, 42, 116);
 
 }
-.sidebar-links-active{
+
+.sidebar-links-active {
     font-size: 24px;
     font-weight: 400;
-    color: azure;
-    background-color:rgb(7, 42, 116);
+    color: rgb(255, 255, 255);
+    background-color: rgb(7, 42, 116);
     padding: 15px 20px;
     margin: 10px 5px;
     text-align: center;
+    text-decoration: none;
 }

@@ -221,7 +221,7 @@ const removeFile =(index)=> (e) => {
        
     
     </div>
-     <EditePlace /> 
+     {/* <EditePlace />  */}
     </>
     
   )

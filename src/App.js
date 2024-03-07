@@ -37,6 +37,11 @@ import AgentCodeBook from './pages/dashboad/agent code book/agentCodeBook';
 import TourReport from './pages/dashboad/tour report/tour_report';
 
 
+
+
+//new admin
+import Place from './pages/dashboad/place/place';
+
 //user components
 import Navbar from './components/navbar/navbar';
 import Home from './pages/user/home/home';
@@ -112,24 +117,27 @@ function App() {
 
 
 
-              {/* user private */}
-              <Route element={<PrivateRoute/>}>
+
                   <Route element={<Home/>} path="/" exact/>
 
 
 
-                  <Route exact path="/carousel" element={<HomeCarousel/>}/>
-                    <Route exact path="/cart/:id" element={<Cart/>} /> 
-                    <Route exact path="/profile/:id" element={<User/>} />
+<Route exact path="/carousel" element={<HomeCarousel/>}/>
+  <Route exact path="/cart/:id" element={<Cart/>} /> 
+  <Route exact path="/profile/:id" element={<User/>} />
+
+
+
+              {/* user private */}
+              <Route element={<PrivateRoute/>}>
+                  
           
               </Route>
 
 
 
-            {/* admin private */}
-              <Route element={<AdminRoutes/>}>
-                <Route exact path="/dashboad/addplace" element={<Add_place/>}/>
-          <Route exact path="/dashboad/tourCategory" element={<TourCategory/>}/>
+              <Route exact path="/dashboad/addplace" element={<Add_place/>}/>
+                <Route exact path="/dashboad/tourCategory" element={<TourCategory/>}/>
           <Route exact path="/dashboad/hotels" element={<Hotels/>}/>
           <Route exact path="/dashboad/vehicals" element={<Vehicals/>}/>
           <Route exact path="/dashboad/agents" element={<Agents/>}/>
@@ -150,6 +158,15 @@ function App() {
           <Route exact path="/dashboad/promote_code" element={<Promote_code/>}/>
           <Route exact path="/dashboad/agentCodeBook" element={<AgentCodeBook/>}/>
           <Route exact path="/dashboad/tourReport" element={<TourReport/>}/>
+
+
+
+
+          <Route exact path="/dashboad/place" element={<Place/>}/>
+
+            {/* admin private */}
+              <Route element={<AdminRoutes/>}>
+                
               </Route>
 
           </Routes>

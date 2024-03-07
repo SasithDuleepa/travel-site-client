@@ -1,6 +1,6 @@
 import React from 'react';
 import './sidebar.css';
-import Icon1 from './../../../assets/sidebar_logo.png'
+import Icon1 from './../../../assets/1114.jpg'
 export default function Sidebar() {
   return (
     <div className='sidebar'>
@@ -10,7 +10,7 @@ export default function Sidebar() {
       <div className='sidebar-links-div'>
       
        
-        <a className={window.location.pathname==='/dashboad/addplace' ? "sidebar-links-active":"sidebar-links"} href={"/dashboad/addplace"}>Place</a>
+        <a className={window.location.pathname==='/dashboad/place' ? "sidebar-links-active":"sidebar-links"} href={"/dashboad/addplace"}>Place</a>
         {/* <a className={window.location.pathname==='/dashboad/placeCategory' ? "sidebar-links-active":"sidebar-links"} href={"/dashboad/placeCategory"}>Place Category</a> */}
         <a className={window.location.pathname==='/dashboad/popular_destinations' ? "sidebar-links-active":"sidebar-links"} href={"/dashboad/popular_destinations"}>Popular Destinations</a>
         <a className={window.location.pathname==='/dashboad/daytour' ? "sidebar-links-active":"sidebar-links"} href={"/dashboad/daytour"}>Day tour</a>

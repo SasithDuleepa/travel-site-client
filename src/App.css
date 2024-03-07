@@ -1,27 +1,27 @@
 .App {
-  background-color:rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 
 }
 
 
 
-.Add-sub-div{
+.Add-sub-div {
   margin-left: 17%;
 
 }
 
 
-:root{
+:root {
 
 
 
 
-  --font_1:'popins';
-  --font_2:'';
+  --font_1: 'popins';
+  --font_2: '';
 
-  --orange:rgb(243,149,57);
-  --blue:rgb(8, 28, 85);
-  --blue1:#0a2e84;
+  --orange: rgb(243, 149, 57);
+  --blue: rgb(8, 28, 85);
+  --blue1: #0a2e84;
 
 
 
@@ -31,7 +31,7 @@
 }
 
 
-.dashboad-add-btn{
+.dashboad-add-btn {
   background-color: var(--color_1);
   padding: 10px 30px;
   border: none;
@@ -40,7 +40,8 @@
   color: aliceblue;
   text-transform: uppercase;
 }
-.readme-btn{
+
+.readme-btn {
   background-color: orange;
   padding: 20px 30px;
   border-radius: 25px;
