@@ -1,82 +1,104 @@
-
-
-.tourCategory{
-    /* background-color: aqua; */
+.tourCategory {
+    margin-left: 130px;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-    
-}
-.tourcategory-sub{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid black;
-    margin: 50px auto;
-    padding: 50px;
-    border-radius: 10px;
+
+
 }
 
-.tourcategory-line{
-    border-bottom: 2px solid black;
-    width: 800px;
+.header-Add_category {
+    text-align: center;
 }
-.tourcategory-form{
+
+.tourcategory-line {
+    border-bottom: 2px solid black;
+    width: 900px;
+}
+
+.tourcategory-sub {
+    margin-left: 150px;
+}
+
+
+
+.tourcategory-form {
     width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 20px 10px;
 }
-.tourcategory-p1{
-    text-align: center;
-    padding: 10px 1px;
-}
-.tourcategory-p2{
+
+.tourcategory-p1 {
     text-align: center;
     padding: 10px 1px;
 }
 
-.tourcategory-result-div{
+.tourcategory-p2 {
+    text-align: center;
+    padding: 10px 1px;
+}
+
+.tourcategory-result-div {
     /* background-color: aquamarine; */
-    margin: 10px;
-}
-
-.tourcategory-tour-div{
-    background-color: antiquewhite;
-    margin: 10px;
+    /* margin: 5px auto; */
+    background-color: rgb(222, 222, 222);
 
 }
-.tourcategory-search-result{
+
+
+.tourcategory-search-result-div {
     display: flex;
+    flex-direction: column;
     align-items: center;
+
+    width: 100%;
+    height: 150px;
+    overflow-y: scroll;
+}
+
+.tourcategory-search-result {
+
     background-color: antiquewhite;
     margin: 2px auto;
-    padding: 2px ;
     width: 100%;
-    &:hover{
+
+    &:hover {
         background-color: rgb(146, 146, 146);
     }
 }
-.tourcategory-select-result{
+
+
+
+.tourcategory-tour-div {
+    background-color: rgba(177, 177, 177, 0.531);
+
+
+
+}
+
+.tourcategory-select-result {
     display: flex;
     align-items: center;
-    gap: 20px;
-    background-color: rgb(222, 190, 147);
-    margin: 2px auto;
-    padding: 2px ;
-    width: 100%;
-    &:hover{
-        background-color: rgb(146, 146, 146);
-    }
+    justify-content: start;
+    gap: 30px;
 }
-.tourcategory-delete-img{
+
+.tourcategory-delete-img {
     width: 20px;
 }
 
-.tourcategory-add-button{
-    background-color:var(--blue);
+.tourcategory-add-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.tourcategory-add-button {
+    background-color: var(--blue);
     padding: 10px 30px;
     border: none;
     border-radius: 25px;

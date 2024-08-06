@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './navbar.css';
-import Icon from './../../assets/sidebar_logo.png';
+import Icon from './../../assets/1114.jpg';
 import Menu from './../../assets/menu.png';
 import Close from './../../assets/close.png';
 
@@ -53,15 +53,15 @@ export default function Navbar() {
         <div className='nav-bar-upper-div'>
           <div className='nav-bar-upper-div-left'>
             <div className='nav-bar-upper-div-left-sub'>
-              <p className='nav-bar-upper-div-left-p'>+94 117 833 833</p>
+              <p className='nav-bar-upper-div-left-p'>+00 000 000 000</p>
             </div>
             
           </div>
           <div className='nav-bar-upper-div-right'>
             <div className='nav-bar-upper-div-right-sub'>
-            <a className='nav-bar-upper-div-right-1'>785, Negombo Road, Liyanagemulla, Seeduwa, Sri Lanka </a>
+            <a className='nav-bar-upper-div-right-1'>no.00 , xxxxx, xxxxxx xxxxx xxx </a>
             <p className='nav-bar-upper-div-right1'> | </p>
-            <a className='nav-bar-upper-div-right-1'> info@srilankatravelexpert.com</a>
+            <a className='nav-bar-upper-div-right-1'> xxxxx@xxxxxxx.com</a>
             <a className='nav-bar-upper-div-right-1'></a>
 
             </div>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './editeplace.css';
 import Axios from 'axios';
+import Delete from '../../../assets/icons/delete.png';
 
 export default function EditePlace() {
     const [places, setPlaces] = useState([]);
@@ -235,68 +236,64 @@ export default function EditePlace() {
 
   return (
     <div className='editeplace'>
-        <h1>EditePlace</h1>
+        <h1>Edit Place</h1>
         <div className='editeplace-line'></div>
 
         <div className='editeplace-div1'>
-            <div className='editeplace-search-div'>
-                <input  className='editeplace-search-input' type="text" placeholder='search place' onChange={(e)=>PlaceSearcHandler(e)}/>
+            <div className='admin-search-div'>
+                <input  className='admin-search-input' type="text" placeholder='search place (all places)' onChange={(e)=>PlaceSearcHandler(e)}/>
             </div>
 
-            <div className='editeplace-search-result-div'>
+            <div className='admin-search-results-div'>
                 {places.length>0 && places.map((place,index)=>{
                     return(
 
-                            <button key={index} className='editeplace-search-result' onClick={SelectHandler(place.place_id)}>{place.place_name}</button>
+                            <button key={index} className='admin-search-results' onClick={SelectHandler(place.place_id)}>{place.place_name}</button>
                      
                     )
                 }    )}
             </div>
 
-            <div>
-            <button className='edite-place-update-btn' onClick={UpdateHandler}>Update</button>
-        {/* <button className='edite-place-delete-btn' onClick={DeleteHandler}>hide</button> */}
-        <button className='edite-place-delete-btn' onClick={DELETE}>DELETE </button>
-            </div>
+            
 
 
             <div className='editeplace-form-div'>
                 <div className='editeplace-form'>
-                    <label className='editeplace-form-label'>Name:</label>
+                    <label className='editeplace-form-label'>Place Name :</label>
                     <input className='editeplace-form-input' type='text'  value={name}  onChange={(e)=>setName(e.target.value)}/>
                 </div>
                 <div className='editeplace-form'>
-                    <label className='editeplace-form-label'>Priority:</label>
+                    <label className='editeplace-form-label'>Priority :</label>
                     <input className='editeplace-form-input' type='text'  value={priority}  onChange={(e)=>setPriority(e.target.value)}/>
                 </div>
                 <div className='editeplace-form-location'>
                     <div className='editeplace-form'>
-                        <label className='editeplace-form-label'>Lat</label>
+                        <label className='editeplace-form-label'>Lat :</label>
                         <input className='editeplace-form-input'  type='number' value={lat} onChange={(e)=>setLat(e.target.value)}/>
                     </div>
                     <div className='editeplace-form'>
-                        <label className='editeplace-form-label'>Lng</label>
+                        <label className='editeplace-form-label'>Lng :</label>
                         <input className='editeplace-form-input'  type='number' value={lng} onChange={(e)=>setLng(e.target.value)}/>
                     </div>
                 </div>
                 <div className='editeplace-form'>
-                    <label className='editeplace-form-label'>time duration</label>
+                    <label className='editeplace-form-label'>Visit Time Duration :</label>
                     <input  className='editeplace-form-input'  value={time} onChange={(e)=>setTime(e.target.value)}/>
                 </div>
                 <div className='editeplace-form'>
-                    <label className='editeplace-form-label'>visiting fee</label>
+                    <label className='editeplace-form-label'>Visiting Fee :</label>
                     <input className='editeplace-form-input'  type='number'  value={fee} onChange={(e)=>setFee(e.target.value)}/>
                 </div>
                 <div className='editeplace-form'>
-                    <label className='editeplace-form-label'>description</label>
+                    <label className='editeplace-form-label'>Description :</label>
                     <textarea  value={description} onChange={(e)=>setDescription(e.target.value)}/>
                 </div>
                 <div className='editeplace-form'>
-                    <label className='editeplace-form-label'>short description</label>
+                    <label className='editeplace-form-label'>Short Description :</label>
                     <textarea value={short} onChange={(e)=>setShort(e.target.value)}/>
                 </div>
                 <div className='editeplace-form'>
-                    <label className='editeplace-form-label'>card image:</label>
+                    <label className='editeplace-form-label'>Card Image :</label>
                     <input type='file' onChange={(e)=>setNewCardImg(e.target.files[0])}/>
                     {newCardImg ?
                         <img className='editeplace-form-img-card' src={URL.createObjectURL(newCardImg)} alt="" />
@@ -307,7 +304,7 @@ export default function EditePlace() {
                     
                 </div>
                 <div className='editeplace-form'>
-                    <label className='editeplace-form-label'>cover image:</label>
+                    <label className='editeplace-form-label'>Cover Image :</label>
                     <input type='file' onChange={(e)=>setNewCoverImgs(e.target.files[0])}/>
                     {newCoverImgs ?
                         <img className='editeplace-form-img-cover' src={URL.createObjectURL(newCoverImgs)} alt="" />
@@ -321,13 +318,13 @@ export default function EditePlace() {
             </div>
 
             <div className='editeplace-form-img-div'>
-                <p className='editeplace-form-img-div-title'>Available images</p>
+                <p className='editeplace-form-img-div-title'>Place Images :</p>
                 <div  className='editeplace-form-placeimg-div'>
                 {imgs.length>0 && imgs.map((img,index)=>{
                     return(
                         <div  className='editeplace-form-placeimg-div-sub1' key={index}>
                             <img className='editeplace-form-img' src={`${process.env.REACT_APP_BACKEND_URL}/places/placeimg/?file=${img.img_name}`} alt="" />
-                            <button className='editeplace-form-placeimg-div-sub1-edite' onClick={ImgDeleteHandler(index,img.img_name)}>DELETE</button>
+                            <button className='editeplace-form-placeimg-div-sub1-edite' onClick={ImgDeleteHandler(index,img.img_name)}><img src={Delete} /></button>
                         </div>
                     )
                 
@@ -337,24 +334,31 @@ export default function EditePlace() {
 
                 
 
-                <div className='editeplace-form'>
-                    <label className='editeplace-form-label'>Add Image</label>
-                    <input  className='editeplace-form-ims-input' type='file' placeholder='Upload' multiple={true} onChange={(e) => Filehandler(e)}  />
                 
-                </div>
                 <div className='editeplace-form-addedimages'>
                 {newImgs.length > 0 && newImgs.map((img, index) => (
     <div className='editeplace-form-img_div' key={index}>
         <img className='editeplace-form-addedimg' src={URL.createObjectURL(img.file)} alt="" />
-        <button className='editeplace-form-addedimg-delete' onClick={newImgDeleteHandler(index)}>DELETE</button>
+        <button className='editeplace-form-addedimg-delete' onClick={newImgDeleteHandler(index)}><img src={Delete}/></button>
     </div>
 ))}
 
 </div>
 
+<div className='editeplace-form'>
+                    <label className='editeplace-form-label'>Add Image</label>
+                    <input  className='editeplace-form-ims-input' type='file' placeholder='Upload' multiple={true} onChange={(e) => Filehandler(e)}  />
+                
+                </div>
+
             </div>
 
         </div>
+
+            <div>
+                <button className='update_button' onClick={UpdateHandler}>Update</button>
+                <button className='delete_button' onClick={DELETE}>Delete </button>
+            </div>
         
     
                     

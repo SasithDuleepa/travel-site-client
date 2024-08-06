@@ -1,35 +1,36 @@
-
-
-.editeplace{
+.editeplace {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px auto;
+    /* margin: 20px auto; */
     margin-left: 150px;
- 
+
 }
-.editeplace-line{
+
+.editeplace-line {
     border-bottom: 2px solid black;
-    width: 90%;
+    width: 78%;
 }
 
 
 
-.editeplace-div1{
+.editeplace-div1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 5px;
 }
-.editeplace-search-div{
+
+.editeplace-search-div {
     /* background-color: aqua; */
     width: 100%;
     display: flex;
     justify-content: center;
     margin: 50px auto;
 }
-.editeplace-search-input{
+
+.editeplace-search-input {
     text-align: center;
     height: 30px;
     border-radius: 10px;
@@ -37,132 +38,140 @@
 
 
 
-.editeplace-search-result-div{
+.editeplace-search-result-div {
     background-color: rgb(179, 179, 179);
     max-height: 200px;
     width: 400px;
-    overflow-y:scroll;
+    overflow-y: scroll;
     display: flex;
     flex-direction: column;
 
-    
+
 }
-.editeplace-search-result{
+
+.editeplace-search-result {
     background-color: rgba(240, 248, 255, 0.326);
     margin: 1px 2px;
     padding: 3px 0px;
 
 }
 
-.editeplace-form-div{
+.editeplace-form-div {
     /* background-color: violet; */
     border: 1px solid black;
     width: 500px;
     margin-top: 20px;
     padding: 10px 15px;
-    
+
 }
 
-.editeplace-form{
+.editeplace-form {
     display: flex;
     flex-direction: column;
     margin: 10px 5px;
 }
-.editeplace-form-location{
+
+.editeplace-form-location {
     display: flex;
     justify-content: space-between;
 }
-.editeplace-form-label{
+
+.editeplace-form-label {
     font-size: 24px;
 }
-.editeplace-form-input{
+
+.editeplace-form-input {
     height: 32px;
     border-radius: 10px;
     border: 1px solid black;
 }
 
-.editeplace-form-img-card{
+.editeplace-form-img-card {
     width: 280px;
     height: 360px;
 }
-.editeplace-form-img-cover{
+
+.editeplace-form-img-cover {
     width: 400px;
-  height: 118px;
+    height: 118px;
 }
 
-.editeplace-form-img{
+.editeplace-form-img {
     width: 388px;
-  height: 300px;
+    height: 300px;
 }
 
 
-.editeplace-form-ims-input{
+.editeplace-form-ims-input {
     width: 300px;
 
     border: 1px solid black;
     border-radius: 10px;
 }
 
-.editeplace-form-addedimages{
+.editeplace-form-addedimages {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: antiquewhite;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    background-color: rgba(250, 235, 215, 0);
 }
 
-.editeplace-form-addedimg{
+.editeplace-form-addedimg {
     width: 388px;
     height: 300px;
 }
-.editeplace-form-addedimg-delete{
-    background-color: red;
+
+.editeplace-form-addedimg-delete {
+    background-color: transparent;
+    margin-left: -50px;
+    border: none;
+
+
+    img {
+        width: 30px;
+
+    }
 }
 
 
 
 
 
-.editeplace-form-img-div{
+.editeplace-form-img-div {
     width: 900px;
     /* background-color: aqua; */
     padding: 20px;
     margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
 
 }
-.editeplace-form-img-div-title{
+
+.editeplace-form-img-div-title {
     font-size: 40px;
     text-align: center;
 }
-.editeplace-form-placeimg-div{
+
+.editeplace-form-placeimg-div {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     /* background-color: antiquewhite; */
 }
 
-.editeplace-form-placeimg-div-sub1{
-    /* background-color: yellowgreen; */
+.editeplace-form-placeimg-div-sub1 {
+    background-color: yellowgreen;
     margin: 5px;
 }
-.editeplace-form-placeimg-div-sub1-edite{
-    position: relative;
-    background-color: blueviolet
-}
 
+.editeplace-form-placeimg-div-sub1-edite {
+    background-color: transparent;
+    margin-left: -40px;
+    border: none;
 
-.edite-place-update-btn{
-    background-color: blue;
-    padding: 10px 30px;
-    border: none;
-    border-radius: 10px;
-    margin: 10px;
-}
-.edite-place-delete-btn{
-    background-color: rgb(255, 0, 0);
-    padding: 10px 30px;
-    border: none;
-    border-radius: 10px;
-    margin: 10px;
+    img {
+        width: 30px;
+        background-color: rgba(74, 74, 74, 0.099);
+    }
 }

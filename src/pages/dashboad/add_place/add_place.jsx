@@ -4,11 +4,13 @@ import axios from 'axios';
 import { GoogleMap, useLoadScript, MarkerF  } from '@react-google-maps/api';
 import EditePlace from './../edite place/editePlace';
 
-import Delete from './../../../assets/icons/delete.png'
-
+import Editing from './../../../assets/icons/editing.png';
+import Delete from './../../../assets/icons/delete.png';
 
 
 export default function Add_place() {
+
+  const [edit,setEdit] = useState(false);
 
     const[data , setData] = useState({
         name:"",
@@ -128,6 +130,9 @@ const removeFile =(index)=> (e) => {
         
   return (
     <>
+    <button className='admin-edit-add-btn' onClick={()=>setEdit(!edit)}>{edit? 'Add' : "Edit"}</button>
+
+    {edit ?  <EditePlace/>:
     <div className='add-place'>
       <div className='add-place-sub'>
         <h1 className='header-Add_place'>ADD PLACE</h1>
@@ -221,7 +226,8 @@ const removeFile =(index)=> (e) => {
        
     
     </div>
-     {/* <EditePlace />  */}
+}
+  
     </>
     
   )

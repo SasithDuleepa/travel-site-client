@@ -9,6 +9,8 @@ import TcEdite from '../edite tour category/tcEdite';
 
 
 export default function TourCategory() {
+  const [edite,setEdit] = useState(false);
+
   const[data,setData] = useState({
     name:'',
     description:'',
@@ -92,68 +94,83 @@ export default function TourCategory() {
     }
   }
   return (
-    <div className="tourCategory">
-      <h1>TOUR CATEGORY</h1>
-      <div className='tourcategory-line'></div>
-      
-      <div className='tourcategory-sub'>
-      
-
-      <div>
-      <div className='tourcategory-form'>
-          <label>name:</label>
-          <input type="text" id='name' onChange={(e)=>changeHandler(e)}/>
-        </div>
-        <div className='tourcategory-form'>
-          <label>description:</label>
-          <textarea type="text" id='description' onChange={(e)=>changeHandler(e)} />
-        </div>
-        <div className='tourcategory-form'>
-          <label>img:</label>
-          <input type="file" id='img' onChange={(e)=>fileHandler(e)}/>
-        </div>
-
-        <h2>add tours</h2>
-        <div className='tourcategory-form'>
-          <label>search tour:</label>
-          <input type="text" onChange={(e)=>SearchHandler(e)}/>
-        </div>
-        
-        <div className='tourcategory-result-div'>
-          {searchdata.length > 0 ? searchdata.map((item,index)=>{
-            return(
-              <div className='tourcategory-search-result'>
-                <a key={index} onClick={SelectTour(item.tour_id, item.tour_name)}>{item.tour_name}</a>
-              </div>
-            )
-          }
-          ) : <p className='tourcategory-p1'>no tour</p>
-          }
-        </div>
-
-        <h2>selected tours</h2>
-        <div className='tourcategory-tour-div'>
-          {selectTours.length > 0 ? selectTours.map((item,index)=>{
-            return(
-              <div className='tourcategory-select-result'>
-                <a key={index}>{item.tour}</a><img src={Delete} onClick={deleteHandler(index)} alt="delete" className='tourcategory-delete-img' />
-              </div>
-            )
-          
-          }
-          ) : <p className='tourcategory-p1'>no tour selected</p>
-          }
-        </div>
-
-      </div>
-      <button className='tourcategory-add-button' onClick={AddHandler}>Add</button>
+    <div>
+      <button className='admin-edit-add-btn' onClick={()=>setEdit(!edite)}>{edite ? 'Add':"Edit"}</button>
+      {edite ? <TcEdite/> : 
+          <div className="tourCategory">
        
-      </div>
+            <h1 className='header-Add_category'>TOUR CATEGORY</h1>
+          <div className='tourcategory-line'></div>
+          
+          <div className='tourcategory-sub'>
+          
+    
+          <div>
+          <div className='tourcategory-form'>
+              <label className='admin-label1'>Name :</label>
+              <input className='admin-input1' type="text" id='name' onChange={(e)=>changeHandler(e)}/>
+            </div>
+            <div className='tourcategory-form'>
+              <label className='admin-label1'>Description:</label>
+              <textarea  className='admin-input1' type="text" id='description' onChange={(e)=>changeHandler(e)} />
+            </div>
+            <div className='tourcategory-form'>
+              <label className='admin-label1'>Image:</label>
+              <input className='admin-input1' type="file" id='img' onChange={(e)=>fileHandler(e)}/>
+            </div>
+    
+            <h2>ADD TOURS</h2>
+            <div className='tourcategory-form'>
+              <label className='admin-label1'>Search Tour :</label>
+              <input className='admin-search-input' type="text" onChange={(e)=>SearchHandler(e)}/>
+            </div>
+            
+            <div className='tourcategory-result-div'>
+              {searchdata.length > 0 ? searchdata.map((item,index)=>{
+                return(
+                  <div className='tourcategory-search-result-div'>
+                    <a className='tourcategory-search-result ' key={index} onClick={SelectTour(item.tour_id, item.tour_name)}>{item.tour_name}</a>
+                  </div>
+                )
+              }
+              ) : <p className='tourcategory-p1'>no tour</p>
+              }
+            </div>
+    
+            <h2>Selected Tours</h2>
+            <div className='tourcategory-tour-div'>
+              {selectTours.length > 0 ? selectTours.map((item,index)=>{
+                return(
+                  <div className='tourcategory-select-result'>
+                    <a key={index}>{item.tour}</a><img src={Delete} onClick={deleteHandler(index)} alt="delete" className='tourcategory-delete-img' />
+                  </div>
+                )
+              
+              }
+              ) : <p className='tourcategory-p1'>no tour selected</p>
+              }
+            </div>
+    
+          </div>
+          <div className='tourcategory-add-div'>
+          <button className='add_button' onClick={AddHandler}>Add</button>
+          </div>
+          
+           
+          </div>
+          
+          
 
+          
+    
+    
 
-      <TcEdite/>
-      
+          
+        </div>
+      }
+
     </div>
+
 
   )
 }

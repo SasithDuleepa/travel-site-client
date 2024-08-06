@@ -101,14 +101,16 @@ export default function PopularDestinations() {
   }
   return (
     <div className='PopularDestinations'>
-        <h1 className='PopularDestinations-header'>Popular Destinations</h1>
+      <div  className='PopularDestinations-main'>
+      <h1 className='PopularDestinations-header'>POPULAR DESTINATIONS</h1>
         <div className='PopularDestinations-line'></div>
         <div className='PopularDestinations-form-div'>
             <div className='PopularDestinations-search-place'>
                 <label className='PopularDestinations-search-place-label'>find place:</label>
                 <input className='PopularDestinations-search-place-input'  onChange={(e)=>handleSearch(e)}/>
             </div>
-            <div className='PopularDestinations-result-place'>
+            {result.length >0 &&
+              <div className='PopularDestinations-result-place'>
               {result.length >0 ? result.map((place, index)=>{
                 return(
                   <div className='PopularDestinations-result-place-div' key={index}>
@@ -123,6 +125,10 @@ export default function PopularDestinations() {
               
 
             </div>
+            }
+            
+
+            <p>Selected Places</p>
 
             <div className='PopularDestinations-selected-div'>
                   {selectedPlace.length >0 ? selectedPlace.map((place, index)=>{
@@ -161,6 +167,9 @@ export default function PopularDestinations() {
             <button className='dashboad-popular-delete-btn'  onClick={()=>UpdateHandler()}>Update</button>
 
         </div>
+
+      </div>
+        
     </div>
   )
 }

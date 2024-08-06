@@ -1,21 +1,24 @@
-.homecarousel-main-div{
+.homecarousel-main-div {
 
     display: flex;
 
     width: 100%;
     margin-top: 40px;
 }
-.homecarousel-sub-div1{
+
+.homecarousel-sub-div1 {
     background-color: rgb(8, 28, 85);
     width: 45%;
     height: 500px;
 }
-.homecarousel-sub-div2{
+
+.homecarousel-sub-div2 {
     background-color: rgb(255, 255, 255);
     width: 55%;
     height: 500px;
 }
-.homecarousel-upper-div{
+
+.homecarousel-upper-div {
     position: absolute;
     /* background-color: rgba(153, 205, 50, 0.345); */
     width: 100%;
@@ -31,16 +34,17 @@
 
 
 
-.homecarousel{
+.homecarousel {
     padding: 50px 0px;
 
     width: 765px;
 
     /* background-color: yellowgreen; */
-    
+
 
 }
-.homecarousel-info-div{
+
+.homecarousel-info-div {
     /* background-color: antiquewhite; */
     height: 400px;
     width: 330px;
@@ -49,7 +53,8 @@
     flex-direction: column;
     align-items: center;
 }
-.homecarousel-info-p1{
+
+.homecarousel-info-p1 {
     width: 300px;
     font-size: 45px;
     font-weight: 500;
@@ -57,7 +62,8 @@
     margin-top: -20px;
     font-family: poppins;
 }
-.homecarousel-info-p2{
+
+.homecarousel-info-p2 {
     font-size: 14px;
     font-weight: 300;
     width: 300px;
@@ -66,7 +72,8 @@
     line-height: 21px;
 
 }
-.homecarousel-info-btn{
+
+.homecarousel-info-btn {
     position: absolute;
     bottom: 60px;
     background-color: var(--orange);
@@ -87,11 +94,12 @@
 
 
 
-.carousel{
+.carousel {
 
     /* background-color: yellowgreen; */
 }
-.carousel-container{
+
+.carousel-container {
     /* background-color: aqua; */
     display: flex;
     justify-content: space-between;
@@ -102,7 +110,7 @@
 
 
 
-.homecarousel-forward-arrow{
+.homecarousel-forward-arrow {
     background-color: rgba(87, 87, 87, 0.445);
     width: 48px;
     height: 48px;
@@ -116,7 +124,7 @@
 
 }
 
-.homecarousel-backward-arrow{
+.homecarousel-backward-arrow {
     background-color: rgba(87, 87, 87, 0.445);
     width: 48px;
     height: 48px;
@@ -129,18 +137,3 @@
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

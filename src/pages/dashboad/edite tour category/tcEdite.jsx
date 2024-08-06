@@ -163,18 +163,16 @@ const Delete =async()=>{
 }
   return (
     <div className='TcEdite-main'>
-        <h1>Edite Tour Category</h1>
+        <h1 className='TcEdite-h1'>Edite Tour Category</h1>
         <div className='TcEdite'>
-          <div className='TcEdite-search-div'>
-            <input onChange={(e)=>TourCategorySearch(e)} placeholder='search tour category'/>
+          <div className='admin-search-div'>
+            <input className='admin-search-input' onChange={(e)=>TourCategorySearch(e)} placeholder='search tour category'/>
 
-          </div>
-          
-            <div className='TcEdite-tours'>
+            <div className='admin-search-results-div'>
                     {tourCategory.length>0 && tourCategory.map((tourcategory,index)=>{
                         return(
-                            <div className='TcEdite-tour-results' key={index}>
-                                <button className='TcEdite-tour-results-btn' onClick={()=>setTcId(tourcategory.tourcategory_id)}>{tourcategory.tourcategory_name}</button>
+                            <div  key={index}>
+                                <button className='admin-search-results' onClick={()=>setTcId(tourcategory.tourcategory_id)}>{tourcategory.tourcategory_name}</button>
 
                             </div>
                         )
@@ -185,16 +183,20 @@ const Delete =async()=>{
 
                 
             </div>
+          </div>
+          
+            
             <div className='TcEdite-form-div'>
                     <div className='TcEdite-form'>
-                        <label className='TcEdite-form-label'>category name:</label>
-                        <input  className='TcEdite-form-input' value={name} onChange={(e)=>setName(e.target.value)}/>
+                        <label className='admin-label1'>Category Name :</label>
+                        <input  className='admin-input1' value={name} onChange={(e)=>setName(e.target.value)}/>
                     </div>
                     <div className='TcEdite-form'>
-                        <label className='TcEdite-form-label'>category description:</label>
-                        <textarea  className='TcEdite-form-input' value={description} onChange={(e)=>setDescription(e.target.value)}/>
+                        <label className='admin-label1'>Category Description :</label>
+                        <textarea  className='admin-input1' value={description} onChange={(e)=>setDescription(e.target.value)}/>
                     </div>
-                    <div className='TcEdite-img-form'>
+                    <div className='TcEdite-form'>
+                      <label className='admin-label1'>Category Image :</label>
                         
                         {newImg ? 
                         <img className='TcEdite-img' src={URL.createObjectURL(newImg)}/>

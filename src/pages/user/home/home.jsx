@@ -18,14 +18,13 @@ export default function Home() {
   return (
     <div>
 
-      <Homeheader/>
+      {/* <Homeheader/> */}
 
 
       <HeaderText/>
 
         
-        
-        {/* <TravelPackage/> */}
+
         <HomeCarousel/>
         <HomeDayTour/>
         <TourPlan/>

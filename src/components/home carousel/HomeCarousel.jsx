@@ -44,12 +44,12 @@ useEffect(() => {
 
     const settings = {
       dots: false,
-      speed: 1400,
+      speed: 900,
       slidesToShow: 3,
       slidesToScroll: 1,
       infinite: true,
       autoplay: true,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 4000,
       // arrows:false,
       nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />
