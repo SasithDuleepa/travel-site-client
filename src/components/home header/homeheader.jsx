@@ -43,11 +43,7 @@ export default function Homeheader() {
     <div className='home-header-main'>
       <div className="pic-wrapper">
 
-        <div className='home-header-text-sub'>
-          <p className='home-header-main-text-1'>Plan your Best tour with</p>
-          <p className='home-header-main-text-2'>Sri Lanka Travel Experts</p>
-          
-        </div>
+        
 
 
 
@@ -65,10 +61,30 @@ export default function Homeheader() {
           
           
         </div>
-  <div className='figure  pic-1 layer' ></div>
-  <div className='figure  pic-2 layer' ></div>
-  <div className='figure  pic-3 layer' ></div>
-  <div className='figure  pic-4 layer' ></div>
+  <div className='figure  pic-1 layer' >
+        <div className='home-header-text-sub'>
+          <p className='home-header-main-text-1'></p>
+          <p className='home-header-main-text-2'>Sri Lanka Travel Experts</p>
+        </div>
+  </div>
+  <div className='figure  pic-2 layer' >
+  <div className='home-header-text-sub'>
+          <p className='home-header-main-text-1'></p>
+          <p className='home-header-main-text-2'>Sri Lanka Travel Experts</p>
+        </div>
+  </div>
+  <div className='figure  pic-3 layer' >
+  <div className='home-header-text-sub'>
+          <p className='home-header-main-text-1'></p>
+          <p className='home-header-main-text-2'>Sri Lanka Travel Experts</p>
+        </div>
+  </div>
+  <div className='figure  pic-4 layer' >
+  <div className='home-header-text-sub'>
+          <p className='home-header-main-text-1'></p>
+          <p className='home-header-main-text-2'>Sri Lanka Travel Experts</p>
+        </div>
+  </div>
 </div>
         
       

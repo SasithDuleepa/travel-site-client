@@ -315,19 +315,19 @@ figurecaption {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    opacity: 0;
-    animation: text-enter 5s infinite;
+    /* animation: text-enter 5s infinite; */
 }
 
-.home-header-main-text-1 {
+.home-header-main-text-1::after {
+    content: "sssss";
     font-size: 40px;
     position: relative;
     font-weight: 500;
     line-height: 1.2;
-    /* Adjusted for better readability */
+
     color: aliceblue;
     margin: 0;
-    /* Reset margin for consistency */
+
 }
 
 .home-header-main-text-2 {
