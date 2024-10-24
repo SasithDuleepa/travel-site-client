@@ -62,27 +62,31 @@ export default function Homeheader() {
           
         </div>
   <div className='figure  pic-1 layer' >
-        <div className='home-header-text-sub'>
+  <div className='home-header-text-sub'>
           <p className='home-header-main-text-1'></p>
-          <p className='home-header-main-text-2'>Sri Lanka Travel Experts</p>
+          <p className='home-header-main-text-2'></p>
+          
         </div>
   </div>
   <div className='figure  pic-2 layer' >
   <div className='home-header-text-sub'>
           <p className='home-header-main-text-1'></p>
-          <p className='home-header-main-text-2'>Sri Lanka Travel Experts</p>
+          <p className='home-header-main-text-2'></p>
+          
         </div>
   </div>
   <div className='figure  pic-3 layer' >
   <div className='home-header-text-sub'>
           <p className='home-header-main-text-1'></p>
-          <p className='home-header-main-text-2'>Sri Lanka Travel Experts</p>
+          <p className='home-header-main-text-2'></p>
+          
         </div>
   </div>
   <div className='figure  pic-4 layer' >
   <div className='home-header-text-sub'>
           <p className='home-header-main-text-1'></p>
-          <p className='home-header-main-text-2'>Sri Lanka Travel Experts</p>
+          <p className='home-header-main-text-2'></p>
+          
         </div>
   </div>
 </div>

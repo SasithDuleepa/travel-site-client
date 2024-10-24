@@ -315,22 +315,23 @@ figurecaption {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* animation: text-enter 5s infinite; */
+    /* opacity: 0;
+    animation: text-enter 5s infinite; */
 }
 
-.home-header-main-text-1::after {
-    content: "sssss";
+.home-header-main-text-1 ::before {
     font-size: 40px;
     position: relative;
     font-weight: 500;
     line-height: 1.2;
-
+    /* Adjusted for better readability */
     color: aliceblue;
     margin: 0;
-
+    /* Reset margin for consistency */
+    content: "Plan your Best tour with";
 }
 
-.home-header-main-text-2 {
+.home-header-main-text-2::before {
     font-size: 80px;
     position: relative;
     font-weight: 500;
@@ -339,4 +340,5 @@ figurecaption {
     color: aliceblue;
     margin: 0;
     /* Reset margin for consistency */
+    content: "Sri Lanka Travel Experts";
 }
