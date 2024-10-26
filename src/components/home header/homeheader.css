@@ -100,15 +100,21 @@ figurecaption {
 
 .home-header-main-sub2 {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.507);
+
     padding: 1px 10px 10px 10px;
     z-index: 2;
-    bottom: 1px;
+    bottom: -1px;
     position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+
+    background-color: rgba(255, 255, 255, 0.322);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.1px);
+    -webkit-backdrop-filter: blur(5.1px);
 }
 
 .homeheader-input-title {
@@ -122,21 +128,41 @@ figurecaption {
 }
 
 .homeheader-input-div {
-    background-color: rgb(255, 255, 255);
-    padding-top: 0px;
-    padding-bottom: 0px;
+
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.1px);
+    -webkit-backdrop-filter: blur(5.1px);
+
+    padding: 5px 10px;
     display: flex;
     align-items: center;
-    border-radius: 10px;
+    justify-content: center;
+    border-radius: 5px;
 
 }
 
 .homeheader-input-1 {
     width: 180px;
     height: 30px;
-    background-color: rgb(255, 255, 255);
     border: none;
     text-align: center;
+    color: rgba(0, 0, 0, 0.708);
+    background-color: transparent;
+
+    &:focus {
+        background-color: rgba(255, 255, 255, 0.523);
+        outline: 2px solid rgba(0, 0, 0, 0.338);
+        border-radius: 5px;
+
+    }
+
+}
+
+.home-header-input-line {
+    border: 1px solid rgba(51, 50, 50, 0.498);
+    height: 30px;
+    margin: auto 3px;
 }
 
 /* .homeheader-input-1:focus{
@@ -154,11 +180,7 @@ figurecaption {
     color: white;
 }
 
-.homeheader-input-center {
-    border-left: 2px solid rgb(110, 110, 110);
 
-
-}
 
 /* keyframes*/
 @keyframes slideShow {
@@ -319,19 +341,7 @@ figurecaption {
     animation: text-enter 5s infinite; */
 }
 
-.home-header-main-text-1 ::before {
-    font-size: 40px;
-    position: relative;
-    font-weight: 500;
-    line-height: 1.2;
-    /* Adjusted for better readability */
-    color: aliceblue;
-    margin: 0;
-    /* Reset margin for consistency */
-    content: "Plan your Best tour with";
-}
-
-.home-header-main-text-2::before {
+.home-header-main-text-1 {
     font-size: 80px;
     position: relative;
     font-weight: 500;
@@ -340,5 +350,17 @@ figurecaption {
     color: aliceblue;
     margin: 0;
     /* Reset margin for consistency */
-    content: "Sri Lanka Travel Experts";
+
+}
+
+.home-header-main-text-2 {
+    font-size: 40px;
+    position: relative;
+    font-weight: 500;
+    line-height: 1.2;
+    /* Adjusted for better readability */
+    color: aliceblue;
+    margin: 0;
+    /* Reset margin for consistency */
+
 }
