@@ -11,9 +11,9 @@ import { BrowserRouter as Router, Route,Routes, BrowserRouter } from "react-rout
 import Sidebar from './pages/dashboad/sidebar/sidebar';
 import Contactus from './pages/user/contactUs/contactus';
 import Tours from './pages/user/tours/tours';
-import Add_place from './pages/dashboad/add_place/add_place';
-import TourCategory from './pages/dashboad/Tour Catergory/tourCategory';
-import Hotels from './pages/dashboad/Hotel/hotels';
+import Add_place from './pages/dashboad/place/add_place/add_place';
+import TourCategory from './pages/dashboad/tour category/tourCatergory';
+import Hotels from './pages/dashboad/Hotel/hotel';
 import Vehicals from './pages/dashboad/vehicals/vehicals';
 import Agents from './pages/dashboad/agents/agents';
 import Images from './pages/dashboad/Images/images';
@@ -136,7 +136,7 @@ function App() {
 
 
 
-              <Route exact path="/dashboad/addplace" element={<Add_place/>}/>
+              <Route exact path="/dashboad/place" element={<Place/>}/>
                 <Route exact path="/dashboad/tourCategory" element={<TourCategory/>}/>
           <Route exact path="/dashboad/hotels" element={<Hotels/>}/>
           <Route exact path="/dashboad/vehicals" element={<Vehicals/>}/>

@@ -1,0 +1,93 @@
+.PopularDestinations {
+    margin-left: 1px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.PopularDestinations-main {
+    margin-left: 150px;
+}
+
+.PopularDestinations-header {
+    text-align: center;
+}
+
+.PopularDestinations-line {
+    border-bottom: 2px solid black;
+    margin: 0px 20px;
+    margin-top: 0px;
+}
+
+.PopularDestinations-form-div {
+
+    padding: 50px;
+}
+
+.PopularDestinations-search-place {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.PopularDestinations-search-place-label {
+    font-size: 22px;
+}
+
+.PopularDestinations-search-place-input {
+    height: 30px;
+    width: 300px;
+    border: 2px solid rgba(0, 0, 0, 0.501);
+    border-radius: 10px;
+
+}
+
+
+.PopularDestinations-result-place {
+    background-color: rgba(0, 0, 0, 0.188);
+    max-height: 200px;
+    overflow-y: scroll;
+    margin-top: 5px;
+    padding: 5px 3px;
+
+}
+
+.PopularDestinations-result-place-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.PopularDestinations-selected-div {
+    background-color: rgba(0, 0, 0, 0.283);
+    max-height: 250px;
+    overflow-y: scroll;
+    margin-top: -5px;
+}
+
+.dashboad-popular-add-btn {
+    background-color: blue;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    position: relative;
+    margin: 20px;
+}
+
+
+.dashboad-popular-delete-img {
+    width: 35px;
+    height: 35px;
+}
+
+.dashboad-popular-delete-btn {
+    background-color: rgb(255, 0, 0);
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    position: relative;
+    margin: 20px;
+}

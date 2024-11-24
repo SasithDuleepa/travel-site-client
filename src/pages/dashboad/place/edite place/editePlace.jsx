@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './editeplace.css';
 import Axios from 'axios';
-import Delete from '../../../assets/icons/delete.png';
+import Delete from './../../../../assets/icons/delete.png';
 
 export default function EditePlace() {
     const [places, setPlaces] = useState([]);

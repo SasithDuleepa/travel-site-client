@@ -8,7 +8,7 @@ import TcEdite from '../edite tour category/tcEdite';
 
 
 
-export default function TourCategory() {
+export default function AddTourCategory() {
   const [edite,setEdit] = useState(false);
 
   const[data,setData] = useState({

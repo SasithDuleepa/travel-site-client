@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import './hotels.css';
 import axios from 'axios';
 
-import Edite_hotel from '../edite hotel/edite_hotel';
-export default function Hotels() {
+export default function AddHotels() {
   const[name,setName] = useState('')
   const[lat,setLat] = useState('')
   const[lang, setLng] = useState('')
@@ -172,7 +171,6 @@ export default function Hotels() {
         </div>
         <button className='hotel-dashboad-add-btn' onClick={AddHotel}>Add </button>
       </div>
-      <Edite_hotel/>
     </div>
   )
 }

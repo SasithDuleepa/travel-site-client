@@ -1,10 +1,9 @@
 import React from 'react';
-import './place.css';
 
 import AdminPanelMainComponent from '../../../components/admin panel main component/adminPanelMainComponent';
 
-import Add_place from '../add_place/add_place';
-import EditePlace from '../edite place/editePlace';
+import Add_place from './add_place/add_place';
+import EditePlace from './edite place/editePlace';
 
 export default function Place() {
   return (
