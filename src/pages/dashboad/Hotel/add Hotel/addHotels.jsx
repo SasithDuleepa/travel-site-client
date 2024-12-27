@@ -91,6 +91,7 @@ export default function AddHotels() {
       })
       if (res.status === 200) {
         window.alert("Hotel added successfully");
+        window.location.reload();
               }
     } catch (error) {
       if(error.response.status === 401){

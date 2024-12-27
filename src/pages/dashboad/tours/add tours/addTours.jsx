@@ -94,7 +94,7 @@ const Submit =async()=>{
   const formData = new FormData();
   formData.append('packageName', name);
   formData.append('description', description);
-  formData.append('file', image);
+  formData.append('cardImage', image);
   formData.append('coverImage', coverImage);
   formData.append('price', price);
   formData.append('distance', distance);

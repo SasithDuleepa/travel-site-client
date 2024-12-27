@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './addPopularDestinations.css'
 import axios from 'axios';
-import Delete from './../../../assets/icons/delete.png'
+import Delete from '../../../../assets/icons/delete.png'
 
 export default function AddPopularDestinations() {
 

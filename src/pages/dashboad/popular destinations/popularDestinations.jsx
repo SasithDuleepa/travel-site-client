@@ -3,8 +3,8 @@ import React from 'react';
 
 import AdminPanelMainComponent from '../../../components/admin panel main component/adminPanelMainComponent';
 
-import AddPopularDestinations from './../add popular destinations/addPopularDestinations';
-import EditPopularDestinations  from '../edit popular destinations/editPopularDestinations';
+import AddPopularDestinations from './add popular destinations/addPopularDestinations';
+import EditPopularDestinations  from './edit popular destinations/editPopularDestinations';
 
 export default function Place() {
   return (

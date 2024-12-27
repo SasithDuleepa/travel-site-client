@@ -74,11 +74,11 @@ const removeFile =(index)=> (e) => {
           formData.append('lat', data.lat);
           formData.append('lng', data.lng);
           formData.append('cardImg', cardImg); 
-          formData.append('coverImgs', coverImgs);
+          formData.append('coverImg', coverImgs);
           
           // Loop through the files and append them to the formData
           data.file.forEach((file, index) => {
-            formData.append('files', file);
+            formData.append('placeImgs', file);
           });
 
           console.log([...formData])
