@@ -23,9 +23,9 @@ useEffect(() => {
       <div className='header-text'>
       <div className='header-text-child1'>
         <p className='header-text-sub-p '>Travel with</p>
-        <h1 className='header-text-h1 '>Sri Lanka Travel Experts</h1>
+        <h1 className='header-text-h1 '> XYZ Tours</h1>
         <p className='header-text-p '>{about}</p>
-           <div className=''><a className='headertext-more-btn' href='/about'>Read More</a></div>
+           <div className=''><a className='header-text-more-btn' href='/about'>Read More</a></div>
            
         
 

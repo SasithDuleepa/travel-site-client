@@ -147,7 +147,8 @@ figurecaption {
     height: 30px;
     border: none;
     text-align: center;
-    color: rgba(0, 0, 0, 0.708);
+    font-size: 17px;
+    color: rgba(105, 105, 105, 0.759);
     background-color: transparent;
     transition: .2s;
 
@@ -155,7 +156,7 @@ figurecaption {
         background-color: rgba(255, 255, 255, 0.523);
         outline: 2px solid rgba(0, 0, 0, 0.338);
         border-radius: 5px;
-
+        color: rgba(12, 12, 12, 0.87);
     }
 
 }
@@ -171,7 +172,7 @@ figurecaption {
     background-color: violet;
 } */
 .homeheader-input-btn {
-    background-color: orange;
+    background-color: var(--secondary-blue);
     padding: 5px 50px;
     margin: 5px 5px 5px 5px;
     font-size: 20px;

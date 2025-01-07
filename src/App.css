@@ -12,10 +12,6 @@
 
 
 :root {
-
-
-
-
   --font_1: 'popins';
   --font_2: '';
 
@@ -24,8 +20,12 @@
   --blue1: #0a2e84;
 
 
+  --primary-blue: #003b95;
+  --secondary-blue: #003b95;
+  --primary-white: #fff;
 
 
+  --font_primary: "Poppins", serif;
 
 
 }
