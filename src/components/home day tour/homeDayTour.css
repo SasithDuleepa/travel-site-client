@@ -1,16 +1,17 @@
-.HomeDayTour{
+.HomeDayTour {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 100px;
 }
-.HomeDayTour-main{
+
+.HomeDayTour-main {
     width: 1276px;
     height: 662;
     /* background-color: yellow; */
     display: flex;
     justify-content: space-between;
-    align-items:flex-end;
+    align-items: flex-end;
 }
 
 
@@ -30,7 +31,7 @@
 
 
 
-.HomeDayTour-carousel-info{
+.HomeDayTour-carousel-info {
     background-color: rgb(255, 255, 255);
     width: 618px;
     height: 662px;
@@ -38,35 +39,39 @@
     padding: 20px 50px 20px 100px;
 
 }
-.HomeDayTour-carousel-info-h1{
+
+.HomeDayTour-carousel-info-h1 {
     font-size: 35px;
     font-weight: 600;
     margin-top: 10px;
     color: black;
 }
-.HomeDayTour-link{
+
+.HomeDayTour-link {
     text-decoration: none;
     color: black;
 }
 
 
-.HomeDayTour-carousel-info-p1{
+.HomeDayTour-carousel-info-p1 {
     font-size: 32px;
     font-weight: 600;
     text-transform: capitalize;
     margin-top: 20px;
     transition: 1s;
     /* background-color: rgb(162, 255, 0); */
-    max-width: 340px;
+    /* width: 450px; */
     overflow: hidden;
     text-decoration: none;
     color: var(--blue1);
 }
-.HomeDayTour-carousel-info-p2{
+
+.HomeDayTour-carousel-info-p2 {
     font-size: 16px;
     line-height: 28px;
-    font-weight: 400;
+    font-weight: 450;
     transition: 1s;
+    letter-spacing: .5px;
     /* background-color: rgb(0, 106, 255); */
     height: 260px;
     overflow: hidden;
@@ -75,72 +80,78 @@
     text-align: justify;
 }
 
-.HomeDayTour-info-div-1{
+.HomeDayTour-info-div-1 {
     display: flex;
     flex-direction: column;
     margin-top: -20px;
 }
-.HomeDayTour-info-sub-div-3{
+
+.HomeDayTour-info-sub-div-3 {
     display: flex;
     margin-bottom: 20px;
     /* background-color: yellowgreen; */
 
 }
-.HomeDayTour-info-sub-div-1{
+
+.HomeDayTour-info-sub-div-1 {
     display: flex;
     /* background-color: yellowgreen; */
 
 }
-.HomeDayTour-info-sub-div-2{
+
+.HomeDayTour-info-sub-div-2 {
     display: flex;
     margin-top: 40px;
     /* background-color: yellowgreen; */
 
 }
-.HomeDayTour-info-p1{
+
+.HomeDayTour-info-p1 {
     font-size: 25px;
     font-weight: 400;
     margin: 0px;
     font-family: poppins;
 }
-.HomeDayTour-info-p2{
+
+.HomeDayTour-info-p2 {
     font-size: 15px;
     font-weight: 400;
     margin: 0px;
     font-family: poppins;
 }
-.HomeDayTour-info-p3{
+
+.HomeDayTour-info-p3 {
     font-size: 25px;
     font-weight: 400;
     margin: 0px;
     font-family: poppins;
     color: red;
-    font-weight: 600;
+    font-weight: 500;
 }
-.HomeDayTour-info-p4{
+
+.HomeDayTour-info-p4 {
     font-size: 25px;
     font-weight: 400;
     margin: 0px;
     font-family: poppins;
-    font-weight: 600;
+    font-weight: 400;
 }
 
-.home-daytour-reacd-more{
+.home-daytour-read-more {
     margin-top: 40px;
     margin-left: -330px;
 
 
     font-size: 17px;
     font-weight: 500;
-    background-color: orange;
+    background-color: var(--secondary-blue);
     padding: 8px 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 25px;
-    color: black;
+    color: var(--primary-white);
     text-decoration: none;
-    color: white;
 }
 
 
@@ -150,20 +161,24 @@
 
 
 
-.HomeDayTour-carousel-info-price-div{
+.HomeDayTour-carousel-info-price-div {
     display: flex;
 
 }
-.HomeDayTour-carousel-price-p, .HomeDayTour-carousel-price{
+
+.HomeDayTour-carousel-price-p,
+.HomeDayTour-carousel-price {
     font-size: 26px;
     font-weight: 600;
 }
-.home-daytour-reacd-more-div{
+
+.home-daytour-reacd-more-div {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.HomeDayTour-carousel-readmore{
+
+.HomeDayTour-carousel-readmore {
     font-size: 15px;
     font-weight: 500;
     background-color: orange;
@@ -172,15 +187,16 @@
     text-decoration: none;
     color: black;
     transition: 1s;
-   
+
 }
 
-.HomeDayTour-arrow-right{
+.HomeDayTour-arrow-right {
     width: 48px;
     height: 48px;
 
 }
-.HomeDayTour-carousel-forward-btn{
+
+.HomeDayTour-carousel-forward-btn {
     width: 48px;
     height: 48px;
     background-color: rgba(87, 87, 87, 0.445);
@@ -194,12 +210,14 @@
     border: none;
 
 }
-.HomeDayTour-arrow-left{
+
+.HomeDayTour-arrow-left {
     width: 48px;
     height: 48px;
 
 }
-.HomeDayTour-carousel-backward-btn{
+
+.HomeDayTour-carousel-backward-btn {
     width: 48px;
     height: 48px;
     background-color: rgba(87, 87, 87, 0.445);
@@ -210,13 +228,13 @@
     position: absolute;
     z-index: 1;
     margin-left: -650px;
-    margin-top:300px;
+    margin-top: 300px;
     border: none;
-    
+
 }
 
 
-.DayTourCarousel-img{
+.DayTourCarousel-img {
     width: 658px;
     height: 602px;
 }
@@ -225,13 +243,14 @@
 
 .start-animation {
     animation: slide-up 1s ease-in-out;
-  }
-  
+}
+
 @keyframes slide-up {
     0% {
         transform: translateY(200px);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0);
     }

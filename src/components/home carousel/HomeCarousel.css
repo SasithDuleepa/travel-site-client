@@ -64,27 +64,36 @@
 }
 
 .homecarousel-info-p2 {
-    font-size: 14px;
+    margin-top: -20px;
+    font-size: 16px;
     font-weight: 300;
     width: 300px;
     color: aliceblue;
-    font-family: poppins;
-    line-height: 21px;
+    font-family: var(--font_primary);
+    letter-spacing: 1px;
+    /* line-height: 21px; */
 
 }
 
 .homecarousel-info-btn {
     position: absolute;
     bottom: 60px;
-    background-color: var(--orange);
-    color: rgb(0, 0, 0);
-    padding: 10px 40px;
+    background-color: var(--secondary-blue);
+    color: var(--primary-white);
+    padding: 7px 30px;
     border: none;
     border-radius: 25px;
     text-decoration: none;
-    font-size: 15px;
-    font-weight: 500;
-    font-family: poppins;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: var(--font_primary);
+    border: 1.5px solid var(--primary-white);
+
+    &:hover {
+        background-color: var(--primary-white);
+        color: var(--primary-blue);
+        transition: .2s;
+    }
 }
 
 

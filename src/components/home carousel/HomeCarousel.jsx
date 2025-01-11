@@ -81,7 +81,7 @@ useEffect(() => {
 
       <div className="homecarousel-upper-div">
         <div className="homecarousel-info-div">
-              <p className="homecarousel-info-p1">Tour Packages</p>
+              <p className="homecarousel-info-p1">Tour Categories</p>
               <p className="homecarousel-info-p2">{tourSlider}</p>
               <a className="homecarousel-info-btn" href='tours/tourcategory'>Find More</a>
 

@@ -41,6 +41,13 @@ export default function HomeDayTour() {
 
 
   }
+
+
+
+
+  
+
+
   const [daytours,setDaytours] = useState([]);
   const [isLoade, setIsLoade] = useState(false);
  
@@ -217,7 +224,7 @@ useEffect(()=>{
           
           {daytours.length > 0 ?
           <div className='HomeDayTour-carousel-info'>
-          <h1 className='HomeDayTour-carousel-info-h1'>Day Tour Packages</h1>
+          <h1 className='HomeDayTour-carousel-info-h1'>OUR DAY TOURS</h1>
           <a  className='HomeDayTour-link' href={`/daytour/${daytours[activeSlide_].day_tour_id}`}>
           <p  className={`HomeDayTour-carousel-info-p1 ${isLoade ? 'start-animation' : ''}`}>{daytours[activeSlide_].day_tour}</p>
           <p  className={`HomeDayTour-carousel-info-p2 ${isLoade ? 'start-animation' : ''}`}>{daytours[activeSlide_].description}</p>
@@ -228,20 +235,20 @@ useEffect(()=>{
 
           <div className={`HomeDayTour-info-div-1 ${isLoade ? 'start-animation' : ''}`} >
           <div className='HomeDayTour-info-sub-div-3'>
-            <p className='HomeDayTour-info-p4'>Packages price : </p>
-            <p className='HomeDayTour-info-p4'> $ {packagePrice}</p>
+            <p className='HomeDayTour-info-p4'>Packages price : $ {packagePrice}</p>
+            {/* <p className='HomeDayTour-info-p4'> $ {packagePrice}</p> */}
           </div>
           <div className='HomeDayTour-info-sub-div-1'>
-            <p className='HomeDayTour-info-p2'>Number of Tourists : </p>
-            <p className='HomeDayTour-info-p2'>{passengers}</p>
+            <p className='HomeDayTour-info-p2'>Number of Tourists : {passengers}</p>
+            {/* <p className='HomeDayTour-info-p2'>{passengers}</p> */}
           </div>
           <div className='HomeDayTour-info-sub-div-1'>
-            <p className='HomeDayTour-info-p2'>Tour Starts from : </p>
-            <p className='HomeDayTour-info-p2'>Colombo</p>
+            <p className='HomeDayTour-info-p2'>Tour Starts from : Colombo</p>
+            {/* <p className='HomeDayTour-info-p2'>Colombo</p> */}
           </div>
           <div className='HomeDayTour-info-sub-div-2'>
-            <p className='HomeDayTour-info-p3'>Discounted price : </p>
-            <p className='HomeDayTour-info-p3'> $ {discountedPrice}</p>
+            <p className='HomeDayTour-info-p3'>Discounted price : $ {discountedPrice}</p>
+            {/* <p className='HomeDayTour-info-p3'> $ {discountedPrice}</p> */}
           </div>
           
 
@@ -254,7 +261,7 @@ useEffect(()=>{
              </div>
              
             <div className='home-daytour-reacd-more-div'>
-              <a className='home-daytour-reacd-more' href='/tours/daytour'>Read More</a>
+              <a className='home-daytour-read-more' href='/tours/daytour'>Read More</a>
             </div>
             </div>
              
@@ -270,8 +277,8 @@ useEffect(()=>{
             width: "100%",
           }
         }}
-        // preventScrollOnSwipe
-        swipeTreshold={10}
+        preventScrollOnSwipe
+        swipeTreshold={1}
         activeSlideIndex={activeSlide_}
 
         onRequestChange={activeslideHandler}
@@ -311,7 +318,7 @@ useEffect(()=>{
         speed={1000}
         itemsToScroll={1}
         // autoplayDirection="backward"
-        // easing="ease-in-out"
+        easing="ease-in-out"
         centerMode
       >
         {daytours.length > 0 && daytours.map((daytour, index) => (
