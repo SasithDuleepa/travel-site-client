@@ -1,49 +1,49 @@
-.Dashboad-Images{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-left: 300px;
-}
-
-.Dashboad-Images-div{
+.Dashboad-Images {
     display: flex;
-justify-content: center;
-flex-direction: column;
-align-items: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 300px;
+}
+
+.Dashboad-Images-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
 
 }
 
-.Dashboad-img-header{
+.Dashboad-img-header {}
+
+.Dashboad-img-line {
+
+    border-bottom: 3px solid black;
+    width: 1000px;
+
 
 }
-.Dashboad-img-line{
-
- border-bottom: 3px solid black;
- width: 1000px;
-
- 
-}
 
 
 
-.dashboad-homeimages{
+.dashboad-homeimages {
     border: 1px solid black;
     margin: 20px;
-    padding: 10px 50px 1px 50px; 
+    padding: 10px 50px 1px 50px;
     border-radius: 10px;
 }
-.dashboad-home-hero-img-div{
+
+.dashboad-home-hero-img-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.dashboad-home-hero-header{
 
-}
-.dashboad-home-hero-line{
+.dashboad-home-hero-header {}
+
+.dashboad-home-hero-line {
     border-bottom: 1px solid black;
     width: 1000px;
     margin-bottom: 20px;
@@ -51,23 +51,26 @@ align-items: center;
 
 
 
-.dashboad-home-hero-img-main{
+.dashboad-home-hero-img-main {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
-.dashboad-home-hero-img-div-form{
+
+.dashboad-home-hero-img-div-form {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
     margin: 20px auto;
 }
-.dashboad-home-hero-img{
+
+.dashboad-home-hero-img {
     width: 200px;
     height: 120px;
 }
-.hero-Images-add-btn{
+
+.hero-Images-add-btn {
     background-color: blue;
     padding: 10px 30px;
     border-radius: 20px;
@@ -79,23 +82,24 @@ align-items: center;
 
 
 
-.dashboad-tourimages{
+.dashboad-tourimages {
     border: 1px solid black;
     margin: 50px;
-    padding: 10px 50px 1px 50px; 
+    padding: 10px 50px 1px 50px;
     border-radius: 10px;
     width: 80%;
 }
-.dashboad-tour-hero-img-div{
+
+.dashboad-tour-hero-img-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center
 }
-.dashboad-tour-hero-header{
 
-}
-.dashboad-tour-hero-line{
+.dashboad-tour-hero-header {}
+
+.dashboad-tour-hero-line {
     border-bottom: 1px solid black;
     width: 1000px;
     margin-bottom: 20px;
@@ -114,18 +118,19 @@ align-items: center;
 
 
 
-.Images-add-btn{
-    background-color: var(--color_1);
+.Images-add-btn {
+    background-color: var(--primary-blue);
     color: aliceblue;
     padding: 10px 20px;
     border: 1px solid var(--color_1);
     border-radius: 20px;
     margin: 15px 10px;
-    right:-90%;
+    right: -90%;
     position: relative;
-    &:hover{
+
+    &:hover {
         background-color: aliceblue;
-        color:rgb(3, 3, 48);
+        color: rgb(3, 3, 48);
         border: 1px solid rgb(3, 3, 48);
         transition: .3s;
     }
